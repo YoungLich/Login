@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Silkscreen';
+    font-family: sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to left, #ff0d86, #978484, #2bd4b0fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login>h1 {
+    font-size: 3vw;
+    color: #14dd02;
+}
+
+.left-login-image {
+    width: 28vw;
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: linear-gradient(to top, #acb803, #f83aff, #a62cf8);
+    border: 7px groove rgb(19, 116, 146);
+    border-radius: 22px;
+    box-shadow: 0px 10px 40px 8px #080808;
+}
+
+.card-login>h1 {
+    color: #040a09fe;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield>input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #a8c7dc;
+    color: #000000;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #080808;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield>label {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.textfield input::placeholder {
+    color: #00000094;
+    transition: 0.1s ease;
+}
+
+.textfield input:hover {
+    background-color: rgb(141, 137, 137);
+}
+
+.btn-login {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    background-color: #444;
+    box-shadow: -3px 4px 0 #222, -5px 7px 0 #000;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+}
+
+button:hover {
+    background-color: rgb(89, 98, 104);
+}
+
+@media only screen and (max-width: 950px) {
+    .card-login {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-login {
+        flex-direction: column;
+    }
+
+    .left-login>h1 {
+        display: none;
+    }
+
+    .left-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .left-login-image {
+        width: 35vh;
+    }
+
+    .card-login {
+        width: 90%;
+    }
+}
